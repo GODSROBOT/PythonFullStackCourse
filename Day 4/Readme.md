@@ -144,8 +144,8 @@ print("apple" in fruits)  # True
 ```py 
 empty_set = set()
 ```
-## 📝 Summary
-## ✔️ Covered all 4 built-in data structures
-## ✔️ Hands-on code examples for each
-## ✔️ Set operations and dictionary nesting
-## ✔️ Real-world mini tasks explored for each type
+### 📝 Summary
+### ✔️ Covered all 4 built-in data structures
+### ✔️ Hands-on code examples for each
+### ✔️ Set operations and dictionary nesting
+### ✔️ Real-world mini tasks explored for each type
