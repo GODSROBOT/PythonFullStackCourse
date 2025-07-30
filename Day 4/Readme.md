@@ -8,9 +8,10 @@ Today's class focused on one of the most crucial foundations in Python – **Dat
 
 We covered:
 
-- What are Data Structures?
-- Why we need them in Python
-- Four core built-in types:
+* What are Data Structures?
+* Why we need them in Python
+* Four core built-in types:
+
   1. **Lists**
   2. **Tuples**
   3. **Dictionaries**
@@ -18,23 +19,43 @@ We covered:
 
 ---
 
+## 🔗 File Link
+
+**Python Code:** [`data_structures.py`](./data_structures.py)
+
+---
+
 ## 🔸 1. Lists – `[]`
 
-- Lists are **ordered**, **mutable**, and **allow duplicates**.
-- They can store mixed data types.
+* Lists are **ordered**, **mutable**, and **allow duplicates**.
+* They can store mixed data types.
 
 ### ✅ Example:
+
 ```python
 grocery_list = ["Banana", "Milk", "Chicken"]
 for item in grocery_list:
     print(item)
 ```
 
-##  🔸 2. Tuples – `()`
-- Tuples are ordered, immutable, and allow duplicates.
-- Often used for fixed collections like RGB codes, coordinates, etc.
+### ✅ Real World Example:
+
+```python
+Top_10_populated_country = ["India", "China", "United States", "Indonesia", "Pakistan"]
+Top_10_populated_country.append("Japan")  # Add
+Top_10_populated_country.remove("Mexico")  # Remove
+```
+
+---
+
+## 🔸 2. Tuples – `()`
+
+* Tuples are ordered, immutable, and allow duplicates.
+* Often used for fixed collections like RGB codes, coordinates, etc.
+
 ### ✅ Examples:
-```py
+
+```python
 colour_sets = (
     ("Sky Blue", "#87CEEB"),
     ("Crimson", "#DC143C"),
@@ -44,108 +65,95 @@ for colour in colour_sets:
     print(f"Colour: {colour[0]}, hexcode: {colour[1]}")
 ```
 
-## 🔸 3. Dictionaries – {}
-- Dictionaries store data as key-value pairs.
-- They are unordered, mutable, and don’t allow duplicate keys.
+### ✅ Prime Minister Records:
+
+```python
+indian_prime_ministers = [
+    ("Jawaharlal Nehru", 1947, 1964),
+    ("Narendra Modi", 2014, 2024)
+]
+```
+
+---
+
+## 🔸 3. Dictionaries – `{}`
+
+* Dictionaries store data as key-value pairs.
+* They are unordered, mutable, and don’t allow duplicate keys.
+
 ### ✅ Examples:
-#### 1. Basic Dictionary
-```py
+
+```python
 student = {
     "name": "Arjun",
     "age": 21,
     "course": "AI & ML"
 }
 ```
-#### 2. Nested Dictionary
-```py 
-classroom = {
-    "student1": {"name": "Priya", "marks": 85},
-    "student2": {"name": "Rahul", "marks": 78},
-    "student3": {"name": "Neha", "marks": 92}
+
+### ✅ Nested Movie Reviews:
+
+```python
+movies = {
+    "superman 2025": {
+        "Director": "James Gunn",
+        "Lead Actor": "David Corenswet"
+    }
 }
 ```
-#### 3. Using `dict()` Constructor
-```py
-person = dict(name="Ravi", age=30, city="Delhi")
-```
-#### 4. Phonebook Dictionary
-```py
-phonebook = {
-    "Dad": "9876543210",
-    "Mom": "9123456789",
-    "Best Friend": "9988776655"
-}
-```
-#### 5. Dictionary with List Values
-```py 
-shopping_cart = {
-    "fruits": ["apple", "banana", "mango"],
-    "vegetables": ["carrot", "beans"],
-    "dairy": ["milk", "cheese"]
-}
-```
-#### 6. Looping Through a Dictionary
-```py 
+
+### ✅ Looping & Updating:
+
+```python
 for key, value in student.items():
     print(f"{key} : {value}")
+
+student["grade"] = "A+"  # Add
 ```
-#### 7. Adding / Updating / Deleting
-```py 
-student["age"] = 22         # Update
-student["grade"] = "A+"     # Add
-del student["course"]       # Delete
-```
+
+---
 
 ## 🔸 4. Sets – `{}`
-- Sets are unordered, mutable, and do not allow duplicates.
-- Ideal for storing unique values and doing mathematical operations.
+
+* Sets are unordered, mutable, and do not allow duplicates.
+* Ideal for storing unique values and doing mathematical operations.
+
 ### ✅ Examples:
-#### Basic Set
-```py 
+
+```python
 fruits = {"apple", "banana", "mango"}
-print(fruits)
-``` 
-#### Duplicate Removal
-```py
-numbers = {1, 2, 2, 3, 4, 4, 5}
-print(numbers)
+fruits.add("grape")
+fruits.remove("banana")
 ```
-#### From List to Set
-```py 
-names = set(["Raj", "Priya", "Raj", "Simran"])
-print(names)
+
+### ✅ Use Case:
+
+```python
+numbers = set([1, 2, 2, 3, 4, 4, 5])
+print(numbers)  # duplicates removed
 ```
-#### Adding / Removing
-```py
-colors = {"red", "blue"}
-colors.add("green")
-colors.remove("blue")
-colors.discard("yellow")  # Safe remove
-```
-#### Set Operations
-```py
+
+### ✅ Set Operations:
+
+```python
 a = {1, 2, 3}
 b = {3, 4, 5}
-
-print(a.union(b))               # {1, 2, 3, 4, 5}
-print(a.intersection(b))        # {3}
-print(a.difference(b))          # {1, 2}
-print(a.symmetric_difference(b))# {1, 2, 4, 5}
+print(a.union(b))
+print(a.intersection(b))
 ```
 
-#### Looping & Membership
-```py 
-for item in fruits:
-    print(item)
+---
 
-print("apple" in fruits)  # True
-```
-#### Empty Set
-```py 
-empty_set = set()
-```
-### 📝 Summary
+## 📝 Summary
+
 ### ✔️ Covered all 4 built-in data structures
+
 ### ✔️ Hands-on code examples for each
+
 ### ✔️ Set operations and dictionary nesting
+
 ### ✔️ Real-world mini tasks explored for each type
+
+---
+
+🔗 **Source Code File:** [`data_structures.py`](./data_structures.py)
