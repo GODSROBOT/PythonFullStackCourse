@@ -21,7 +21,7 @@ We covered:
 
 ## 🔗 File Link
 
-**Python Code:** [`data_structures.py`](./data_structures.py)
+🔗 **Source Code File:** [`data_structures.py`](/data_structures.py)
 
 ---
 
@@ -156,4 +156,3 @@ print(a.intersection(b))
 
 ---
 
-🔗 **Source Code File:** [`data_structures.py`](./data_structures.py)
