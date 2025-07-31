@@ -64,21 +64,6 @@ numbers = list(numbers)
 numbers.append(4)
 ```
 
----
-
-## 🤩 Practice Tasks
-
-* ✅ Sum of digits using `while` loop
-* ✅ Fibonacci series using `for` loop
-* ✅ Factorial using `for` loop
-* ✅ Count vowels in string using `for` loop
-* ✅ GCD using `while` loop
-* ✅ Reverse a number
-* ✅ Find unique values using `set`
-
-Each task uses **loops + data structures** to solve simple but foundational logic problems.
-
----
 
 ## 💡 Skills Sharpened
 
@@ -101,8 +86,8 @@ Each task uses **loops + data structures** to solve simple but foundational logi
 
 ## 🔗 Resources
 
-* Debugging Challenges: [`problems.md`](Day5/Debugging/problems.md)
-* Practice Tasks: [`tasks.md`](Day5/Tasks/tasks.md)
+* Debugging Challenges: [`problems.md`](Debugging/Problems.md)
+* Practice Tasks: [`tasks.md`](Tasks/Tasks.md)
 
 ---
 
