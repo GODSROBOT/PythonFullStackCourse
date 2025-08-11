@@ -12,9 +12,9 @@ Today marks **Day 3** of this exciting journey, and I'm documenting everything I
 
 Here's a sneak peek of what's coming:
 
-- ✅ Python Basics & OOP (currently learning)
+- ✅ Python Basics & OOP (Finished)
+- ✅ HTML5, CSS3, JavaScript (currently learning)
 - 🔜 Flask & Django for backend magic
-- 🔜 HTML5, CSS3, JavaScript (Frontend Fun)
 - 🔜 ReactJS for modern UI
 - 🔜 SQL, PostgreSQL, MongoDB
 - 🔜 REST APIs and JSON
@@ -29,8 +29,8 @@ Here's a sneak peek of what's coming:
 |-----|----------------|--------|
 | 1   | Introduction to Python, IDE Setup | ✅ Completed |
 | 2   | Variables, Data Types, Operators | ✅ Completed |
-| 3   | Conditional Statements, Loops     | ✅ In Progress |
-| 4+  | Functions, OOP, Flask, and more   | 🔄 Stay tuned! |
+| 3   | Conditional Statements, Loops     | ✅ Completed |
+| 4+  | Functions, OOP, Flask, and more   | ✅ Completed |
 
 ---
 
