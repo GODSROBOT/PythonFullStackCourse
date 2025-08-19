@@ -1,14 +1,60 @@
-```js
-<button id="Btn">Click Me</button>
+# Day 16 – Events, Timing Functions & Async 🚀
+
+Today we moved deeper into **JavaScript events, timing functions (`setTimeout`, `setInterval`) and async programming with `fetch`**.
+
+---
+
+## 🖱️ Event Listeners
+
+We learned how to add event listeners to HTML elements.
+
+```html
+<button id="clickMeButton">ClickMe</button>
 <script>
-document.getElementById("btn").addeventListner("Click", funtion()
-{
-    alert("Button clicked")
-}
-)
+    document.getElementById("clickMeButton").addEventListener("click", function() {
+        alert("Button clicked!");
+    });
+</script>
 ```
-this will print after 2 second later but if we use setinterval
-```js
+
+### Mouse Events Example
+
+```html
+<div id="message" style="border: 1px solid black; align-content: center;">check this</div>
+<script>
+    document.getElementById("message").addEventListener("mouseover", function() {
+        this.style.color = "red";
+        this.textContent = "Mouse over the message!";
+        this.style.backgroundColor = "yellow";
+    });
+    document.getElementById("message").addEventListener("mouseout", function() {
+        this.style.color = "black";
+        this.textContent = "check this";
+        this.style.backgroundColor = "white";
+    });
+</script>
+```
+
+### Keyboard Event Example
+
+```html
+<input type="text" id="inputField" placeholder="Type something...">
+<script>
+    document.getElementById("inputField").addEventListener("keydown", function() {
+        console.log("Key pressed in input field, " + this.value);
+    });
+</script>
+```
+
+---
+
+## ⏱️ Timing Functions
+
+### `setTimeout`
+
+Runs **once** after a delay.
+
+```html
 <script>
 console.log("Start");
 setTimeout(() => {
@@ -17,36 +63,39 @@ setTimeout(() => {
 console.log("End");
 </script>
 ```
-This will keepon print in each 2 second 
-```js
+
+### `setInterval`
+
+Runs **repeatedly** at a given interval.
+
+```html
 <script>
 console.log("Start");
 setInterval(() => {
-    console.log("Runs after 2 seconds");
+    console.log("Runs every 2 seconds");
 }, 2000);
 console.log("End");
 </script>
 ```
 
-json = java script obejct notion
+---
 
-Lets get async funtion
+## 🌐 Async & Fetch
+
+We explored **async/await** for making API calls.
+
 ```js
-async function getData()
-{
-    let response = await fetch ("")
+async function getData() {
+    let response = await fetch("https://en.wikipedia.org/api/rest_v1/page/summary/Puneeth_Rajkumar");
+    let data = await response.json();
+    console.log(data);
 }
+getData();
 ```
-Homework
-1. Counter using click event
-2. for mouseover we have to put image with using id and events : mouseover and mouseout
-the image must change based in the mouseover and mouseout
-3. for keydown : The event is Keydown , add eventlistner to the document.addEventListner
-basicay the body colour should change basied in the KEY : R = Red ,G = Green , B = Blue 
-if user press The R key in the keyboard they should be able get the body colur to the red and if b then Blue
-and if green then green colour in the background 
-4. 
-```js
+
+Another example that updates the DOM:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,8 +120,29 @@ and if green then green colour in the background
 </body>
 </html>
 ```
-So we have to make it ours own celeberty and if possible we have put the images via api that we gave
-!!!
-5. using settimeout for our flag colour 
-like every 3 second the body must change colour like orange , white and green 
-6. for setinterval we have to print even and odd number printing in the console 
+
+---
+
+## 🏡 Homework
+
+1. **Counter using Click Event** → Button click should increase a counter on the page.
+2. **Mouseover with Image Swap** → On `mouseover` and `mouseout`, swap an image.
+3. **Keydown Events for Colors** → Change background color of the body based on key pressed:
+
+   * `R` → Red
+   * `G` → Green
+   * `B` → Blue
+4. **Wikipedia Fetch** → Choose your own celebrity, fetch data from Wikipedia API, and also display their image if available.
+5. **setTimeout Flag Colors** → Change the background color every 3 seconds (Orange → White → Green).
+6. **setInterval Even/Odd Printing** → Print even and odd numbers alternately in the console every 2 seconds.
+
+### ✅ My Homework File
+1. [Counter](/Day16/hw/Counter.html)
+2. [Mouseover](/Day16/hw/Mouse.html)
+3. [Keydown](/Day16/hw/RGB.html)
+3. [Wikipedia](/Day16/hw/Wiki.html)
+3. [setTimeout](/Day16/hw/Flagcolours.html)
+3. [setInterval](/Day16/hw/even_odd.html)
+---
+
+✅ **Day 16 Summary**: Learned about **event handling**, **timing functions**, and **async/await**. Homework combines interactivity with async fetch requests.
