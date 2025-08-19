@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse In-Out</title>
+</head>
+<body>
+    <h1>Mouse In-Out</h1>
+    <div id="mouse-area" style="width: 300px; height: 300px; background-color: lightgray; margin: 0 auto;">
+    </div>
+    <p id="status" style="text-align: center;">Mouse is outside</p>
+    <script>
+        const mouseArea = document.getElementById('mouse-area');
+        const statusText = document.getElementById('status');
+
+        mouseArea.addEventListener('mouseenter', () => {
+            statusText.textContent = 'Mouse is inside';
+            mouseArea.style.backgroundImage = 'url("https://img.freepik.com/premium-vector/classic-tom-jerry-characters-vibrant-tshirt-illustration_1366711-532.jpg")';
+            mouseArea.style.backgroundSize = 'cover';
+        });
+
+        mouseArea.addEventListener('mouseleave', () => {
+            statusText.textContent = 'Mouse is outside';
+            mouseArea.style.backgroundColor = 'lightgray';
+            mouseArea.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQluPfinI6xImt163SCqV6_g_tKNA-zJMYlNw&s")';
+            mouseArea.style.backgroundSize = 'cover';
+        });
+    </script>
+</body>
+</html>

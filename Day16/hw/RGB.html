@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB BG</title>
+</head>
+<body>
+    <h1>Press a key to change the background color ( R G B W)</h1>
+    <script>
+        document.addEventListener('keydown', (event) => {
+            const key = event.key.toLowerCase();
+            if (['r', 'g', 'b'].includes(key)) {
+                document.body.style.backgroundColor = key === 'r' ? 'red' : key === 'g' ? 'green' : 'blue';
+            } else if (key === 'w') {
+                document.body.style.backgroundColor = 'white';
+            }
+        });
+    </script>
+</body>
+</html>

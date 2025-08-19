@@ -1,0 +1,1 @@
+This day was all about theory and in hand note book practice for js 

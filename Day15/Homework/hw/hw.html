@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+</head>
+<body>
+    <h1 id="Heading">Java</h1>
+    <script>
+        const Heading = document.getElementById("Heading");
+        Heading.textContent = "Javascript";
+        Heading.style.fontFamily = "Arial, sans-serif";
+        Heading.style.color = "yellow";
+        const description = document.createElement("div");
+        description.textContent = "Java Java is a high-level, object-oriented programming language and computing platform, initially released by Sun Microsystems in 1995 and now owned by Oracle. It is known for its \"Write Once, Run Anywhere\" (WORA) capability, meaning compiled Java code can run on any platform that supports Java without the need for recompilation. This platform independence is achieved through the Java Virtual Machine (JVM).";
+        document.body.appendChild(description);
+        description.style.fontFamily = "Arial, sans-serif";
+        description.style.color = "black";
+        const removejava = document.querySelector("div");
+        if (removejava) {
+            removejava.remove();
+        }
+        const newDescription = document.createElement("div");
+        newDescription.textContent = "JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript specification. It has dynamic typing, prototype-based object-orientation, and first-class functions.";
+        document.body.appendChild(newDescription);
+        newDescription.style.fontFamily = "Arial, sans-serif";
+        newDescription.style.color = "black";
+    </script>
+</body>
+</html>

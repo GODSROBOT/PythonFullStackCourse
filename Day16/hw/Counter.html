@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: aqua;">Counter</h1>
+    <div id="counter">
+        <button id="click" style="color: rgb(254, 250, 250); background-color: red;">click</button>
+    </div>
+    <p id="count" style="color: aqua;">0</p>
+    <script>
+        let count = 0;
+        const countDisplay = document.getElementById('count');
+        document.getElementById('click').addEventListener('click', () => {
+            count++;
+            countDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>

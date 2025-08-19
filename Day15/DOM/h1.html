@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="myBody">
+    <h2 id = "MyHeading">My Heading</h2>
+    <script>
+        const myHeading = document.getElementById("MyHeading");
+        myHeading.textContent = "Manvith!";
+        myHeading.style.color = "blue";
+        myHeading.style.backgroundColor = "lightray";
+        myHeading.style.fontSize = "24px";
+        myHeading.style.textAlign = "center";
+        const myParagraph = document.createElement("p");
+        myParagraph.textContent = "Hi I am a 19-year-old boy trying to learn frontend development along with the AI/ML intern course. Now this is my Day 15 of PythonFullStack Course";
+        document.body.appendChild(myParagraph);
+        myParagraph.style.color = "green";
+        myParagraph.style.fontSize = "16px";
+        myParagraph.style.backgroundColor = "white";
+        myParagraph.style.lineHeight = "1.5";
+        myParagraph.style.margin = "10px";
+        myParagraph.style.textAlign = "center";
+        myParagraph.style.display = "flex";
+        myParagraph.style.justifyContent = "center";
+        const backgroundColor = "lightyellow";
+        document.getElementById("myBody").style.backgroundColor = backgroundColor;
+        const removebackground = document.querySelector("#myBody");
+        if (removebackground) {
+            removebackground.style.backgroundColor = "";
+        }
+    </script>
+</body>
+</html>

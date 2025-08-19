@@ -1,0 +1,32 @@
+<button id="clickMeButton">ClickMe</button>
+<script>
+    document.getElementById("clickMeButton").addEventListener("click", function() {
+        alert("Button clicked!");
+    });
+</script>
+
+<div id="message" style="border: 1px solid black; align-content: center;">check this</div>
+<script>
+    document.getElementById("message").addEventListener("mouseover", function() 
+    {
+        this.style.color = "red";
+        this.textContent = "Mouse over the message!";
+        this.style.alignContent = "center";
+        this.style.backgroundColor = "yellow";
+    });
+    document.getElementById("message").addEventListener("mouseout", function() 
+    {
+        this.style.color = "black";
+        this.textContent = "check this";
+        this.style.alignContent = "center";
+        this.style.backgroundColor = "white";
+    });
+</script>
+
+<input type="text" id="inputField" placeholder="Type something...">
+<script>
+    document.getElementById("inputField").addEventListener("keydown", function() 
+    {
+        console.log("Key pressed in input field, " + this.value);
+    });
+</script>

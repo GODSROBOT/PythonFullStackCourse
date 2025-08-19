@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd</title>
+</head>
+<body>
+    <h2>Even or Odd Number using setInterval</h2>
+    <div id="result"></div>
+    <script>
+        let count = 0;
+        setInterval(() => {
+            if (count % 2 === 0) {
+                document.getElementById("result").innerHTML += count + " is even<br>";
+            } else {
+                document.getElementById("result").innerHTML += count + " is odd<br>";
+            }
+            count++;
+        }, 1000);
+    </script>
+</body>
+</html>
