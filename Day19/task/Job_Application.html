@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: #0080ff55;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px; 
+    }
+    #nameLabel { 
+        color: rgb(255, 204, 0); 
+    }
+    #emailLabel { 
+        color: rgb(128, 45, 0); 
+    }
+    #phoneLabel { 
+        color: rgb(0, 102, 204); 
+    }
+    #coverLetterLabel { 
+        color: rgb(204, 0, 102); 
+    }
+    #applyingPositionLabel { 
+        color: rgb(0, 204, 102); 
+    }
+    #resumeLabel { 
+        color: rgb(102, 0, 204); 
+    }
+    #termsLabel { 
+        color: rgb(204, 102, 0); 
+    }
+    #jobApplicationForm {
+        background: linear-gradient(to right, #ffee007f, #b26c6c8f);
+        border-radius: 12px;
+    }
+    </style>
+</head>
+    <body>
+        <!-- Centered responsive card -->
+        <div class="card shadow-lg border-0 col-lg-6 col-md-8 col-11" id="jobApplicationForm">
+        <div class="card-body text-center">
+            <h1 class="card-title">Job Application</h1>
+            <form action="Register" class="form card-body">
+            
+            <!-- Name -->
+            <label for="name" class="form-label card-text" id="nameLabel">Name: </label>
+            <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Enter Your Full Name" required>
+            
+            <!-- Gmail -->
+            <label for="email" class="form-label card-text" id="emailLabel">Gmail: </label>
+            <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Enter Your Gmail" required>
+            <input type="email" class="form-control is-valid mb-3" value="@gmail.com" readonly>
+            
+            <!-- Phone Number -->
+            <label for="phone" class="form-label card-text" id="phoneLabel">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" class="form-control mb-3" placeholder="Enter Your Phone Number" value="+91">
+            <input type="tel" class="form-control is-valid mb-3" value="+91 1234567890" readonly>
+            <input type="tel" class="form-control is-invalid mb-3" value="+91 6565656565656" readonly>
+            
+            <!-- Cover Letter -->
+            <label for="coverLetter" class="form-label card-text" id="coverLetterLabel">Cover Letter: </label>
+            <textarea id="coverLetter" name="coverLetter" class="form-control mb-3" rows="4" placeholder="Write your cover letter here..." required></textarea>
+            
+            <!-- Position -->
+            <label for="ApplyingPosition" class="form-label card-text" id="applyingPositionLabel">Applying Position: </label>
+            <select name="Applying Position" class="form-select mb-3" required>
+                <option value="python">Intern</option>
+                <option value="csharp">Team Lead</option>
+                <option value="javascript">HR</option>
+                <option value="java">Manager</option>
+            </select>
+            
+            <!-- Resume Upload -->
+            <label for="resume" class="form-label card-text" id="resumeLabel">Upload Resume: </label>
+            <input type="file" id="resume" name="resume" class="form-control mb-3" required>
+
+            <!-- Terms and Conditions -->
+            <label for="terms" class="form-label card-text" id="termsLabel">Accept Terms: </label>
+            <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
+            <span class="card-text">I accept the terms and conditions</span>
+
+            <!-- Submit Button -->
+            <div class="d-flex justify-content-center mt-3">
+                <button class="btn btn-primary w-50" id = "Submit">Submit</button>
+            </div>
+            </form>
+        </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="Application.js"></script>
+    </body>
+</html>
