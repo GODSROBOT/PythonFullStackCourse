@@ -1,0 +1,10 @@
+true & true = true
+true & false = false
+false & true = false 
+false & false = false
+
+true or false = true
+false or true = true 
+true or true = true 
+false or false = false 
+

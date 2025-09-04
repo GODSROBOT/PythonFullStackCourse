@@ -1,0 +1,1 @@
+Todays class was contiuation of privous database topic with indepth covering
