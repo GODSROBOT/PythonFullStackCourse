@@ -1,0 +1,1 @@
+Class test was conducted reagarding the SQL and Python
