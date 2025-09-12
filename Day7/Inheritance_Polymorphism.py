@@ -21,7 +21,7 @@ Matt.speak()
 print("-------------------------------------------------")
 print("My exmaple for inheritance")
 print("-------------------------------------------------")
-## This is my example 
+## This is my example
 # parent class
 class Vehicle:
     def __init__(self, name, brand):
