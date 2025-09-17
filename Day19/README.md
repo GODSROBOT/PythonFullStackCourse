@@ -1,17 +1,31 @@
-Todays class was all about new components like buttons , inputs label and margin and padding  
+# Day 19: Bootstrap Forms — Job Application
 
-A Job application form using Bottstrap
+## 📘 Topics Covered
 
-First Input Full name 
-second input Email
-third phone number we need to put example phone munber using "is vaild" and "is in-valid" for numer
-fourth position its dropdown
-fiveth cover letter text area
-resume file upload
-submit button primary size medium only border outline
-All the input boxes medium size
+- Bootstrap form controls: labels, inputs, selects, textareas, file upload
+- Validation states: `is-valid`, `is-invalid`
+- Spacing utilities: `m-*`, `p-*` for margins and padding
+- Buttons: variants, sizes, and outlines
 
-then we have to have checkbox called 
-"Are you ready" checkbox
+## 🧪 Practice Files
 
-and we will use margin and padding all over the form
+- Basic form structure: [Html.html](./Html.html)
+- Form demo: [form.html](./form.html)
+- Task (Job Application): [task/Job_Application.html](./task/Job_Application.html)
+- Optional JS hook: [task/Application.js](./task/Application.js)
+
+## 📝 Task: Job Application Form
+
+Build a responsive form with:
+- Full Name (text), Email, Phone (show `is-valid`/`is-invalid` examples)
+- Position (select dropdown)
+- Cover Letter (textarea)
+- Resume (file input)
+- "Are you ready" checkbox
+- Submit button (primary, medium, outline)
+
+Ensure consistent medium sizing and use Bootstrap spacing utilities throughout.
+
+## 🔗 References
+- Bootstrap Forms: https://getbootstrap.com/docs/5.3/forms/overview/
+- Bootstrap Validation: https://getbootstrap.com/docs/5.3/forms/validation/
